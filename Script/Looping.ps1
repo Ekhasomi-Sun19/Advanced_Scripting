@@ -21,7 +21,6 @@ while ($i -le 10){
     $i++
 }
 
-
 #Do While loop that outputs the numbers from 100-150 counting by 10 in the format 'Number #'
 '';'Do while 100-150 by 10s';'=' * 80
 #Your code Here
@@ -30,7 +29,6 @@ do{
     $i += 11
 }
 while ($i -lt 150)
-
 
 #Do Until loop that outputs the numbers from 1000 to 1500 counting by 100 in the format 'Number #'
 '';'Do until 1000-1500 by 100s';'=' * 80
