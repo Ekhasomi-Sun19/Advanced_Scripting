@@ -1,12 +1,26 @@
 <# 
-Program Name : network.ps1 
+Program Name : Network Function 
 Date: 05/27/2023 
 Author(s): Sunday Ekhasomi
 Course: CIT361 
 I, Sunday Ekhasomi, affirm that I wrote this script as original work completed by me. 
 #>
 
-# Function to calculate network ID
+#Overview
+
+#Understanding networks is a key to being a successful system administrator. For this script you 
+#will write two networking functions. Get-IPNetwork and Test-IPNetwork. Get-IPNetwork will return 
+#a network ID as an [IPAddress] object given an IPAddress and SubnetMask. Test-IPNetwork will take 
+#two IPAddresses and a subnet mask and return a true if they are on the same network and a false 
+#otherwise. These only need to work for IPv4. MAKE SURE YOU FOLLOW THE REQUIRMENTS CAREFULLY.
+
+#Requirements:
+
+#1. Create a script named network.ps1
+
+#2. Include the following author comment block
+
+
 # Function to calculate network ID
 #Description: Given an IP address and a Subnet mask return the network ID
 #Name: Get-IPNetwork
@@ -43,9 +57,6 @@ function Test-IPNetwork {
     return $networkID1 -eq $networkID2
 }
 
-# $ipAddress1 = [IPAddress]"192.168.1.10"
-# $ipAddress2 = [IPAddress]"192.168.1.20"
-# $subnetMask = [IPAddress]"255.255.255.0"
 #After defining the functions, write code that asks the user to input two IP addresses and a subnet mask.
 $ipAddress1 = Read-Host -Prompt "Enter the first IP address"
 $ipAddress2 = Read-Host -Prompt "Enter the second IP address"
