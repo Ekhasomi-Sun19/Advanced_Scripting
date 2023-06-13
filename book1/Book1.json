@@ -1,0 +1,17 @@
+{
+  "event":
+  {
+    "action" : "jumped",
+    "actor" :
+    {
+      "id" : "foxes",
+      "desc" : [ "quick", "brown" ]
+    },
+    "object" :
+    {
+      "id" : "dog",
+      "desc" : "lazy"
+    }
+  }
+}
+

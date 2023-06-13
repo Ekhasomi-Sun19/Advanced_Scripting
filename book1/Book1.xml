@@ -1,0 +1,5 @@
+<event>
+  <action direction="over">jumped</action>
+  <actor speed="quick" color="brown">foxes</actor>
+  <object desc="lazy">dog</object>
+</event>
