@@ -1,7 +1,13 @@
+enum colors{
+    red = 0;
+    blue = 1;
+    Green = 2;
+}
+
 class Circle{
     static $Pi = 3.1415927
     [double] $Diameter
-    $Color
+    [colors]$Color
     Circle([double]$Diameter){
         # initialize the $Diameter property in this constructor
         $this.Diameter = $Diameter
