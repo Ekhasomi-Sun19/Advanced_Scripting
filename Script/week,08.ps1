@@ -1,10 +1,3 @@
-<# Program Name : Week8.ps1
-   Date: 21 June 2023
-   Author: Sunday Ekhasomi
-   Course: CIT361
-   I, Sunday Ekhasomi, affirm that I wrote this script as original work completed by me.
-#>
-
 function Get-MACVendor {
     param(
         $MACAddress,
@@ -77,18 +70,5 @@ function Format-Songs {
         catch {
             throw "Cannot write to $Path."
         }
-    }
-else {
-    # $output = ""
-    Write-Output "" > $path
-    $RushSongTable = Import-csv $DatabasePath -Delimiter "`t"
-    $AlbumCatalog = $RushSongTable | Group-Object Album
-    foreach ($Album in $AlbumCatalog) {
-        Write-Host "$($Album.Name) ($($Album.Group[0].Year))" > .\output
-        foreach ($SongName in $Album.Group.Song) {
-            Write-Host "    $SongName" >> $Path
-        }
-    }
-    
     }
 }
