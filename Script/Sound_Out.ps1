@@ -1,0 +1,11 @@
+[System.Console]::Beep(659, 125); 
+[System.Console]::Beep(659, 125);
+[System.Threading.Thread]::Sleep(125); 
+[System.Console]::Beep(659, 125); 
+[System.Threading.Thread]::Sleep(167); 
+[System.Console]::Beep(523, 125); 
+[System.Console]::Beep(659, 125); 
+[System.Threading.Thread]::Sleep(125); 
+[System.Console]::Beep(784, 125); 
+[System.Threading.Thread]::Sleep(375); 
+[System.Console]::Beep(392, 125);
